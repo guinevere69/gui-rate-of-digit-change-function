@@ -12,10 +12,14 @@ Let $n$ have numerical digits $d_1, d_2, ..., d_L$.
 Define
 
 $$
-D(n) = \frac{1}{L-1} \sum_{i=1}^{L-1} |d_{i+1} - d_i|,
+D(n) = 
+\begin{cases}
+0, & \text{if } L = 1\\ 
+\frac{1}{L-1} \sum_{i=1}^{L-1} |d_{i+1} - d_i|, & \text{if } L \ge 2
+\end{cases}
 $$
 
-with $D(n)$ = 0 if $L$ = 1.
+
 
 ---
 
@@ -46,10 +50,20 @@ This allows comparisons between numbers of different lengths and provides a basi
 
 ---
 
-## Related Work and Extensions
+## Related Work
 - `A297330`: Total sum of digit variations.  
 - `A004216`: Number of digits in n.  
-- `R(n)`: A variance-based extension of D(n) capturing irregularity in digit transitions.  
+
+---
+
+## Extensions
+- $R(n)$: A variance-based extension of $D(n)$ capturing irregularity in digit transitions.
+
+$R(n)$ is calculated from:
+
+$$
+R(n) = \sqrt{\frac{1}{L - 1} \sum_{i=1}^{L - 1} \left( \left| d_{i+1} - d_i \right| - D(n) \right)^2 }
+$$
 
 ---
 
