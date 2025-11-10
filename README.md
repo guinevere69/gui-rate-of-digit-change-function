@@ -1,3 +1,4 @@
+**Author**: Zhenxuan Gui
 # Gui Rate of Digit Change Function
 
 This repository introduces **$D(n)$**, a mathematical function defining the **mean absolute rate of digit change** between consecutive digits of an integer.  
