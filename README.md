@@ -1,5 +1,5 @@
 **Author**: Zhenxuan Gui
-# Gui Rate of Digit Change Function
+# Gui's Metric for Numerical Complexity
 
 This repository introduces **$D(n)$**, a mathematical function defining the **mean absolute rate of digit change** between consecutive digits of an integer.  
 It also explores related variance-based metrics such as **$R(n)$** for measuring numerical digit irregularity.
